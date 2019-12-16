@@ -1,4 +1,4 @@
 module.exports = {
-    comicreviews: require("./Comicreviews"),
-    notelog: require("./Notelog")
+    comicReviews: require("./comicreviews"),
+    noteLog: require("./notelog")
   };

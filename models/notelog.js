@@ -6,7 +6,8 @@ const Schema = mongoose.Schema;
 const noteLogSchema = new Schema({
 //getting the title
     title: {
-    type: String
+    type: String,
+    required: true
     },
 //getting the body
     body: {
@@ -17,7 +18,7 @@ const noteLogSchema = new Schema({
 })
 
 //creating the mongoose model
-const comments = mongoose.model("Notelog", noteLogSchema);
+const comments = mongoose.model("comments", noteLogSchema);
 
 //exporting the module
 module.exports = comments;

@@ -14,14 +14,14 @@ const comicReviewSchema = new Schema({
     type: String,
     required: true
     },
-    noteLog: {
+    noteLog: [{
         type: Schema.Types.ObjectId,
-        ref: "Logging Notes"
-    }
+        ref: "Notelog"
+    }]
 })
 
 //creating the mongoose model
-const comics = mongoose.model("Reviews", comicReviewSchema);
+const comics = mongoose.model("comics", comicReviewSchema);
 
 //exporting the module
 module.exports = comics;

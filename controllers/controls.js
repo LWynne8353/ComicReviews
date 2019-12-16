@@ -1,13 +1,11 @@
 const express = require("express");
-const Route = express.Route();
-const path = require ("path");
 
-const request = require("request");
+
+//tools to scrape (hope this works or I will look like a total ajaxs)
+const axios = require("axios");
 const cheerio = require("cheero");
 
+//requiring the both note log and comic comicreview js
 const comments = require("../models/notelog.js");
 const comics = require("../models/comicreviews.js");
 
-route.get("/", function(req,res){
-    res.redirect("/comicreviews")
-});
